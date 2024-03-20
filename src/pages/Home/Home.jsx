@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Banner from "./Banner";
 import BistoImg from "./BistoImg";
 import Featured from "./Featured";
@@ -9,6 +10,9 @@ import TestMonial from "./TestMonial";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Bistro Boss | Home</title>
+      </Helmet>
       <Banner></Banner>
       <OnlineCategory></OnlineCategory>
       <BistoImg></BistoImg>
